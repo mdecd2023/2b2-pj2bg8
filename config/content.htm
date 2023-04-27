@@ -8,6 +8,7 @@
 <h1>w9</h1>
 <h2>41023202</h2>
 <p>轉檔過程</p>
+<p>
 <script>
 var winkVideoData1 = {
   dataVersion: 1,
@@ -18,6 +19,7 @@ var winkVideoData1 = {
   },
 };
 </script>
+</p>
 <div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData1" height="630" muted="true" width="1008">
 <source src="/downloads/football轉檔.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
@@ -34,6 +36,7 @@ var winkVideoData1 = {
 <p></p>
 <h2>41023212</h2>
 <p>心得:這次是請教同學，學到了怎麼自查ip位置和如何使用於課程教材</p>
+<p>
 <script>
 var winkVideoData = {
   dataVersion: 1,
@@ -44,24 +47,23 @@ var winkVideoData = {
   },
 };
 </script>
+</p>
 <!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
 <div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData" height="600" muted="true" width="800">
 <source src="/downloads/輸入ip.mp4" type="video/mp4"/></video></div>
 <h2>41023229</h2>
-<<<<<<< HEAD
-<h2>41023242.</h2>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/u0qsZHo_wtE" title="YouTube video player" width="560"></iframe></p>
-<p>心得:這次的機器人連線測試我覺得跟之前的比較起來，這一次的困難許多，要連同一個IP才能達到連線，也謝謝老師與同學們的教導</p><h1>w10</h1>
-<h1>Brython</h1>
-=======
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<p></p>
+<p></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/bFUTk6NdGHA" width="560"></iframe></p>
 <p>心得:這次機器人的操做可以手動控制，連線比之前還要複雜難懂，繼續加油。</p>
 <h2>41023242</h2>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/u0qsZHo_wtE" title="YouTube video player" width="560"></iframe></p>
 <p>心得:這次的機器人連線測試我覺得跟之前的比較起來，這一次的困難許多，要連同一個IP才能達到連線，也謝謝老師與同學們的教導</p>
 <h1>w10</h1>
-<p>41023202:試著理解老師的題目以及幫助組長做的。</p><h1>Brython</h1>
->>>>>>> b698f7e04779b3857cff11492eac2c99c2e70e76
+<p>41023202:試著理解老師的題目以及幫助組長做的。</p>
+<h1>Brython</h1>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; b698f7e04779b3857cff11492eac2c99c2e70e76</p>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
@@ -352,6 +354,7 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <h2>Brython_ex2</h2>
 <p>This code uses the Euler method to approximate the solution to the ODE dy/dx = x - y with an initial condition of y0 = 1.0. The solution is calculated for a range of x values from 0 to 5.</p>
 <p id="brython_div"></p>
+<p>
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
 <script>
@@ -359,6 +362,7 @@ window.onload=function(){
 brython({debug:1, pythonpath:['/static/']});
 }
 </script>
+</p>
 <p>Solve ODE:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document
 
@@ -447,6 +451,7 @@ data = [{'x': x, 'y': y}]
 window.Plotly.newPlot('brython_div', data)</pre>
 <p>This code defines a function dy_dx that represents the mass-spring-damper ordinary differential equation. The Euler method is used to solve this equation for a range of x values from 0 to 20 with initial conditions of y0 = [1.0, 0.0]. The solution is then plotted on the webpage using <a href="https://plotly.com/javascript/">plotly.js</a>.</p>
 <p id="mass-spring-damper"></p>
+<p>
 <script type="text/python3">
 from browser import document, window
 
@@ -481,8 +486,10 @@ data = [{'x': x, 'y': [y[i][0] for i in range(len(y))]}]
 layout = {'title': 'Mass-Spring-Damper System', 'xaxis': {'title': 'Time'}, 'yaxis': {'title': 'Displacement'}}
 window.Plotly.newPlot('mass-spring-damper', data, layout)
 </script>
+</p>
 <p>This code defines a function dy_dx that represents the mass-spring-damper system with a PID controller. The gains of the PID controller are set to Kp = 10.0, Ki = 1.0, and Kd = 0.5. The Euler method is used to solve this system of equations for a range of x values from 0 to 20 with initial conditions of y0 = [0.0, 0.0, 0.0, 0.0]. The response of the system is then plotted on the webpage using <a href="https://plotly.com/javascript/">plotly.js</a>.</p>
 <p id="pid-control"></p>
+<p>
 <script type="text/python3">
 from browser import document, window
 
@@ -525,7 +532,9 @@ data = [{'x': x, 'y': [y[i][0] for i in range(len(y))], 'name': 'Output'},
 layout = {'title': 'Mass-Spring-Damper System with PID Control', 'xaxis': {'title': 'Time'}, 'yaxis': {'title': 'Displacement'}}
 window.Plotly.newPlot('pid-control', data, layout)
 </script>
+</p>
 <p height="480" id="container" width="640"></p>
+<p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" type="text/javascript"></script>
 <script type="text/python">
 from browser import document, window
@@ -562,7 +571,9 @@ def animate(timestamp):
 # Start the animation loop
 window.requestAnimationFrame(animate)
 </script>
+</p>
 <p height="480" id="container2" width="640"></p>
+<p>
 <script type="text/python">
 from browser import document, window
 
@@ -623,8 +634,10 @@ def animate(timestamp):
 # Start the animation loop
 window.requestAnimationFrame(animate)
 </script>
+</p>
 <p>STL part viewer</p>
 <p height="480" id="stl" width="640"></p>
+<p>
 <script type="text/python">
 from browser import document, html
 
@@ -644,6 +657,7 @@ def init_stl_viewer():
 # Wait for the Stl Viewer Javascript Plugin to load before initializing the viewer
 document.bind("readystatechange", lambda: init_stl_viewer() if document.readyState == "complete" else None)
 </script>
+</p>
 <p>Using <a href="https://www.sciencedirect.com/science/article/pii/S0950705115005043">sine-cosine algorithm</a> to optimize with constraints in Brython:</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
