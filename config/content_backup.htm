@@ -64,7 +64,7 @@ var winkVideoData = {
 <p>41023202:試著理解老師的題目以及幫助組長做的。</p>
 <p>41023229:了解老師的題目，</p>
 <p>41023242:詢問同學協助組長，不會地問GPT，也有在cd2023尋找問題</p>
-<p><button id="add1to100">1 add to 100</button></p>
+<p><button id="亂數 ">亂數 </button></p>
 <!-- 導入 brython 程式庫 -->
 <p>
 <script src="/static/brython.js"></script>
@@ -122,7 +122,7 @@ def run1():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/yonqui0411/0e83180156e50326dab3c455145f22ff/raw/4a6d33a51879fd5966c8dc82147589692a76d800/2b2.py"
+        url = "https://gist.githubusercontent.com/yonqui0411/b0c1a214bc229b72d4347f67c808c5a1/raw/7067ce1fe733b5a585acb72d7d17a8d36a8639a7/222.py"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -144,7 +144,7 @@ doc['clear_bd1'].bind('click', clear_bd1)
 run1()
 </script>
 </p>
-<p><!-- add 1 to 100 開始 -->
+<p><!-- 亂數 -->
 <script type="text/python3">
 from browser import document as doc
 import ace
@@ -157,7 +157,7 @@ def clear_bd1(ev):
 # 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
 Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
 
-add1to100_url = "https://gist.githubusercontent.com/yonqui0411/0e83180156e50326dab3c455145f22ff/raw/4a6d33a51879fd5966c8dc82147589692a76d800/2b2.py"
+add1to100_url = "https://gist.githubusercontent.com/yonqui0411/b0c1a214bc229b72d4347f67c808c5a1/raw/7067ce1fe733b5a585acb72d7d17a8d36a8639a7/222.py"
 # 從 gist 取得程式碼
 add_src = open(add1to100_url).read()
 def add(ev):
@@ -166,11 +166,11 @@ def add(ev):
     Ace2.editor.gotoLine(0)
     Ace2.run()
 
-# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
-doc["add1to100"].bind('click', add)
+# id 為 "亂數 " 的按鈕點按時, 執行 add 方法
+doc["亂數 "].bind('click', add)
 </script>
 </p>
-<p><!-- add 1 to 100 結束--></p>
+<p><!-- 亂數  結束--></p>
 <!-- editor1 開始 -->
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
