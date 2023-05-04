@@ -666,6 +666,8 @@ Plotly.newPlot('plot', data, layout)
 &lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
+<p></p>
+<p>function(population[i]) # Update the best solution if population_fitness[i] &lt; best_fitness: best_solution = population[i] best_fitness = population_fitness[i] # Print the current iteration and best fitness print(f'Iteration: {iteration + 1}, Best Fitness: {best_fitness:.6f}') return best_solution # Run the sine cosine algorithm to solve the optimization problem with constraints best_solution = sine_cosine_algorithm(fitness_function, dimension=2, lower_bound=-10, upper_bound=10, population_size=50, max_iterations=100) # Print the result output_div = document['output'] output_div.text = f'Best Solution: {best_solution}' # Plot the result using Plotly.js data = [ { 'x': [best_solution[0]], 'y': [best_solution[1]], 'mode': 'markers', 'marker': {'size': 12}, 'name': 'Best Solution' } ] layout = { 'xaxis': {'range': [-10, 10]}, 'yaxis': {'range': [-10, 10]}, } Plotly.newPlot('plot', data, layout) &lt;/script&gt; &lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt;</p>
 <p></p><br />Brython << <a href='Brython.html'>Previous</a> </div>
         
     <!-- footer -->
