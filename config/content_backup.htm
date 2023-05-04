@@ -1,15 +1,13 @@
 <h1>About</h1>
 <p>2b2-<a class="color-fg-default lh-0 mb-2 markdown-title" data-hovercard-type="team" data-hovercard-url="/orgs/mdecd2023/teams/pj2bg8/hovercard" data-hydro-click='{"event_type":"dashboard.click","payload":{"event_context":"TEAMS","target":"TEAM","record_id":7755627,"dashboard_context":"user","dashboard_version":2,"user_id":91451176,"originating_url":"https://github.com/"}}' data-hydro-click-hmac="8618af48c4ea66160e544dba2be0d68fa9a09d28604bce058a156869d73bf9d7" href="https://github.com/orgs/mdecd2023/teams/pj2bg8">pj2bg8</a></p>
-<p></p>
-<p>41023242 41023242</p>
 <p>cdtemplate</p>
 <p>倉儲: <a href="https://github.com/mdecd2023/2b2-pj2bg8">https://github.com/mdecd2023/2b2-pj2bg8</a></p>
 <p>網站連結: <a href="https://mdecd2023.github.io/2b2-pj2bg8/content/index.html">https://mdecd2023.github.io/2b2-pj2bg8/content/index.html</a></p>
 <p>人員</p>
 <p>41023212 yonqui0411</p>
-<p>41023229 CHI1020</p>
 <p></p>
-<p><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p><h1>w9</h1>
+<p><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p>
+<h1>w9</h1>
 <h2>41023202</h2>
 <p>轉檔過程</p>
 <p>
@@ -1021,45 +1019,4 @@ Plotly.newPlot('plot', data, layout)
 &lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p></p>function(population[i])
-
-            # Update the best solution
-            if population_fitness[i] &lt; best_fitness:
-                best_solution = population[i]
-                best_fitness = population_fitness[i]
-
-        # Print the current iteration and best fitness
-        print(f'Iteration: {iteration + 1}, Best Fitness: {best_fitness:.6f}')
-
-    return best_solution
-
-# Run the sine cosine algorithm to solve the optimization problem with constraints
-best_solution = sine_cosine_algorithm(fitness_function, dimension=2, lower_bound=-10, upper_bound=10, population_size=50, max_iterations=100)
-
-# Print the result
-output_div = document['output']
-output_div.text = f'Best Solution: {best_solution}'
-
-# Plot the result using Plotly.js
-data = [
-    {
-        'x': [best_solution[0]],
-        'y': [best_solution[1]],
-        'mode': 'markers',
-        'marker': {'size': 12},
-        'name': 'Best Solution'
-    }
-]
-
-layout = {
-    'xaxis': {'range': [-10, 10]},
-    'yaxis': {'range': [-10, 10]},
-}
-
-Plotly.newPlot('plot', data, layout)
-&lt;/script&gt;
-
-&lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
 <p></p>
