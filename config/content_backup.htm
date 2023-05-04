@@ -1,15 +1,17 @@
 <h1>About</h1>
 <p>2b2-<a class="color-fg-default lh-0 mb-2 markdown-title" data-hovercard-type="team" data-hovercard-url="/orgs/mdecd2023/teams/pj2bg8/hovercard" data-hydro-click='{"event_type":"dashboard.click","payload":{"event_context":"TEAMS","target":"TEAM","record_id":7755627,"dashboard_context":"user","dashboard_version":2,"user_id":91451176,"originating_url":"https://github.com/"}}' data-hydro-click-hmac="8618af48c4ea66160e544dba2be0d68fa9a09d28604bce058a156869d73bf9d7" href="https://github.com/orgs/mdecd2023/teams/pj2bg8">pj2bg8</a></p>
 <p></p>
-<p>41023242 41023242</p>
+<p></p>
 <p>cdtemplate</p>
 <p>倉儲: <a href="https://github.com/mdecd2023/2b2-pj2bg8">https://github.com/mdecd2023/2b2-pj2bg8</a></p>
 <p>網站連結: <a href="https://mdecd2023.github.io/2b2-pj2bg8/content/index.html">https://mdecd2023.github.io/2b2-pj2bg8/content/index.html</a></p>
 <p>人員</p>
 <p>41023212 yonqui0411</p>
 <p>41023229 CHI1020</p>
+<p>41023242 41023242</p>
 <p></p>
-<p><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p><h1>w9</h1>
+<p><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p>
+<h1>w9</h1>
 <h2>41023202</h2>
 <p>轉檔過程</p>
 <p>
@@ -61,9 +63,6 @@ var winkVideoData = {
 <p></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/bFUTk6NdGHA" width="560"></iframe></p>
 <p>心得:這次機器人的操做可以手動控制，連線比之前還要複雜難懂，繼續加油。</p>
-<h2>41023242</h2>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/u0qsZHo_wtE" title="YouTube video player" width="560"></iframe></p>
-<p>心得:這次的機器人連線測試我覺得跟之前的比較起來，這一次的困難許多，要連同一個IP才能達到連線，也謝謝老師與同學們的教導。</p>
 <h1>w10</h1>
 <p>41023202:試著理解老師的題目以及幫助組長做的。</p>
 <p></p>
@@ -206,7 +205,7 @@ doc["add1to100"].bind('click', add)
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <div id="brython_div1"><a href="/downloads/場地.ttt">足球場地</a></div>
-<h1>Brython</h1>
+<h2>41023242</h2><h1>Brython</h1>
 <p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; b698f7e04779b3857cff11492eac2c99c2e70e76</p>
 <p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 9146e8bb99311200868add15d25440f97a12c3eb</p>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
@@ -1021,45 +1020,6 @@ Plotly.newPlot('plot', data, layout)
 &lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p></p>function(population[i])
-
-            # Update the best solution
-            if population_fitness[i] &lt; best_fitness:
-                best_solution = population[i]
-                best_fitness = population_fitness[i]
-
-        # Print the current iteration and best fitness
-        print(f'Iteration: {iteration + 1}, Best Fitness: {best_fitness:.6f}')
-
-    return best_solution
-
-# Run the sine cosine algorithm to solve the optimization problem with constraints
-best_solution = sine_cosine_algorithm(fitness_function, dimension=2, lower_bound=-10, upper_bound=10, population_size=50, max_iterations=100)
-
-# Print the result
-output_div = document['output']
-output_div.text = f'Best Solution: {best_solution}'
-
-# Plot the result using Plotly.js
-data = [
-    {
-        'x': [best_solution[0]],
-        'y': [best_solution[1]],
-        'mode': 'markers',
-        'marker': {'size': 12},
-        'name': 'Best Solution'
-    }
-]
-
-layout = {
-    'xaxis': {'range': [-10, 10]},
-    'yaxis': {'range': [-10, 10]},
-}
-
-Plotly.newPlot('plot', data, layout)
-&lt;/script&gt;
-
-&lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<p></p>
+<p>function(population[i]) # Update the best solution if population_fitness[i] &lt; best_fitness: best_solution = population[i] best_fitness = population_fitness[i] # Print the current iteration and best fitness print(f'Iteration: {iteration + 1}, Best Fitness: {best_fitness:.6f}') return best_solution # Run the sine cosine algorithm to solve the optimization problem with constraints best_solution = sine_cosine_algorithm(fitness_function, dimension=2, lower_bound=-10, upper_bound=10, population_size=50, max_iterations=100) # Print the result output_div = document['output'] output_div.text = f'Best Solution: {best_solution}' # Plot the result using Plotly.js data = [ { 'x': [best_solution[0]], 'y': [best_solution[1]], 'mode': 'markers', 'marker': {'size': 12}, 'name': 'Best Solution' } ] layout = { 'xaxis': {'range': [-10, 10]}, 'yaxis': {'range': [-10, 10]}, } Plotly.newPlot('plot', data, layout) &lt;/script&gt; &lt;script src="https://cdn.jsdelivr.net/npm/brython@3/dist/brython"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt;</p>
 <p></p>
