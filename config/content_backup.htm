@@ -1,11 +1,10 @@
 <h1>About</h1>
 <p>2b2-<a class="color-fg-default lh-0 mb-2 markdown-title" data-hovercard-type="team" data-hovercard-url="/orgs/mdecd2023/teams/pj2bg8/hovercard" data-hydro-click='{"event_type":"dashboard.click","payload":{"event_context":"TEAMS","target":"TEAM","record_id":7755627,"dashboard_context":"user","dashboard_version":2,"user_id":91451176,"originating_url":"https://github.com/"}}' data-hydro-click-hmac="8618af48c4ea66160e544dba2be0d68fa9a09d28604bce058a156869d73bf9d7" href="https://github.com/orgs/mdecd2023/teams/pj2bg8">pj2bg8</a></p>
-<p>cdtemplate</p>
+<p>cdtemplate..</p>
 <p>倉儲: <a href="https://github.com/mdecd2023/2b2-pj2bg8">https://github.com/mdecd2023/2b2-pj2bg8</a></p>
 <p>網站連結: <a href="https://mdecd2023.github.io/2b2-pj2bg8/content/index.html">https://mdecd2023.github.io/2b2-pj2bg8/content/index.html</a></p>
 <p></p>
-<p><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p>
-<h1>w9</h1>
+<p><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p><h1>w9</h1>
 <h2>41023202</h2>
 <p>轉檔過程</p>
 <p>
@@ -197,7 +196,8 @@ doc["add1to100"].bind('click', add)
 <p>2.How do you establish a connection between a Python script and CoppeliaSim using zmqRemoteAPI? 使用zmqRemoteAPI建立Python腳本和CoppeliaSim之間的連接需要完成以下步驟： 在CoppeliaSim中啟用遠程API功能：在CoppeliaSim的“選項”菜單中，勾選“遠程API服務器”。確定設置無誤後，重新啟動CoppeliaSim。 在Python中安裝pyzmq庫：使用pip命令安裝pyzmq庫，以便在Python腳本中使用zmqRemoteAPI。 編寫Python腳本：編寫Python腳本以使用zmqRemoteAPI與CoppeliaSim進行通訊。首先，創建一個zmq.Context對象，然後創建一個zmq.REQ（要求）套接字，並使用connect()方法將套接字連接到CoppeliaSim的遠程API服務器地址。 通訊：使用zmq.REQ套接字向CoppeliaSim發送請求。zmq.REQ套接字使用send()方法發送二進制數據，並使用recv()方法接收CoppeliaSim的回應數據。發送和接收的消息格式需要按照zmqRemoteAPI文檔的規定進行編碼和解碼。 總的來說，通過上述步驟可以使用Python腳本與CoppeliaSim進行通訊，實現對機器人仿真環境的控制和數據交換。</p>
 <p>3.What are some common use cases for zmqRemoteAPI in CoppeliaSim? zmqRemoteAPI在CoppeliaSim中有許多常見的用例，下面列出其中幾個： 機器人控制：使用zmqRemoteAPI，可以在Python、C++等程式語言中編寫控制機器人的代碼，並通過與CoppeliaSim的通訊將其應用於仿真環境中。這使得可以測試機器人的運動、感知和控制算法，並且可以與實際硬體進行比較。 軌跡規劃：通過zmqRemoteAPI，可以在Python中使用各種規劃算法計算機器人的運動軌跡，然後將軌跡傳遞給CoppeliaSim以顯示機器人的運動軌跡。 场景控制：可以使用zmqRemoteAPI對CoppeliaSim的場景進行控制，例如更改場景中物體的位置、旋轉角度、添加新的物體等等。這使得可以創建自定義的仿真場景，並且可以測試機器人在不同環境下的表現。 資料檢索：使用zmqRemoteAPI，可以從CoppeliaSim中獲取各種資料，例如機器人的位置、速度、傳感器數據等等。這對於監控仿真運行狀態、測試算法的性能等都非常有用。 總的來說，zmqRemoteAPI在CoppeliaSim中被廣泛應用，可用於各種機器人研究和開發場景，使得使用者可以更輕鬆地控制仿真環境，並進行各種測試和分析。</p>
 <p>4.What are the advantages and disadvantages of using zmqRemoteAPI compared to other methods of communication between Python and CoppeliaSim? 使用zmqRemoteAPI與其他Python與CoppeliaSim之間的通訊方式相比，有以下優點和缺點： 優點： 快速：zmqRemoteAPI使用ZeroMQ庫，通訊速度較快，能夠實現快速的數據傳輸。 靈活性：使用zmqRemoteAPI可以實現很多不同的通訊方式，例如請求/回應、訂閱/發布等等，可以根據不同的應用場景選擇不同的通訊模式。 可擴展性：zmqRemoteAPI具有良好的可擴展性，能夠支持多種用戶同時連接到CoppeliaSim，並且能夠支持多種操作系統。 跨平台：zmqRemoteAPI適用於各種操作系統和平台，使得不同的環境下使用者都可以輕鬆地進行通訊。 缺點： 學習曲線：使用zmqRemoteAPI需要學習一些新的概念和API，對於初學者來說可能需要花費一些時間來學習。 程式代碼複雜：使用zmqRemoteAPI時需要在Python代碼中編寫很多低層次的通訊代碼，這可能會使代碼變得複雜。 總的來說，zmqRemoteAPI是一種可靠且快速的通訊方式，並且具有良好的可擴展性和跨平台性，但使用它需要一定的學習和編程知識。</p>
-<p>5.Can you give an example of a project or task that you could complete using zmqRemoteAPI in CoppeliaSim? 以下是使用zmqRemoteAPI在CoppeliaSim中完成的一些項目示例： 機器人運動控制：使用zmqRemoteAPI可以通過Python腳本控制CoppeliaSim中的機器人運動，從而實現各種自動化任務，例如導航、定位、抓取等。 场景仿真：使用zmqRemoteAPI可以在CoppeliaSim中進行場景仿真，並通過Python腳本控制仿真參數、物體位置、燈光等，從而實現各種場景測試和仿真。 機器人視覺感知：使用zmqRemoteAPI可以通過Python腳本控制CoppeliaSim中的機器人視覺感知模塊，從而實現物體檢測、識別、追蹤等任務。 自主車輛控制：使用zmqRemoteAPI可以通過Python腳本控制CoppeliaSim中的自主車輛運動，從而實現路徑規劃、障礙物避免、速度控制等任務。 總之，使用zmqRemoteAPI可以實現各種不同的任務和項目，並且具有良好的可擴展性和靈活性。</p><h1>W11</h1>
+<p>5.Can you give an example of a project or task that you could complete using zmqRemoteAPI in CoppeliaSim? 以下是使用zmqRemoteAPI在CoppeliaSim中完成的一些項目示例： 機器人運動控制：使用zmqRemoteAPI可以通過Python腳本控制CoppeliaSim中的機器人運動，從而實現各種自動化任務，例如導航、定位、抓取等。 场景仿真：使用zmqRemoteAPI可以在CoppeliaSim中進行場景仿真，並通過Python腳本控制仿真參數、物體位置、燈光等，從而實現各種場景測試和仿真。 機器人視覺感知：使用zmqRemoteAPI可以通過Python腳本控制CoppeliaSim中的機器人視覺感知模塊，從而實現物體檢測、識別、追蹤等任務。 自主車輛控制：使用zmqRemoteAPI可以通過Python腳本控制CoppeliaSim中的自主車輛運動，從而實現路徑規劃、障礙物避免、速度控制等任務。 總之，使用zmqRemoteAPI可以實現各種不同的任務和項目，並且具有良好的可擴展性和靈活性。</p>
+<h1>W11</h1>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <div id="brython_div1"><a href="/downloads/場地.ttt">足球場地</a></div>
